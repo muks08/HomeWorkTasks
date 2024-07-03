@@ -11,7 +11,7 @@ namespace Tasks.Scenario_2_Test_the_Test_Code_Review
         private IWebDriver _driver;
 
         [SetUp]
-        private void SetUp()
+        public void SetUp()
         {
             _driver = new ChromeDriver("path_to_driver");
             _driver.Manage().Window.Maximize();
